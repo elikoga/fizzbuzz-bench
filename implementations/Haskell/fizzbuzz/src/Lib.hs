@@ -3,7 +3,6 @@ module Lib
   )
 where
 
-import Control.Parallel.Strategies
 import Data.Word
 
 fizzbuzz :: Maybe Word64 -> String
