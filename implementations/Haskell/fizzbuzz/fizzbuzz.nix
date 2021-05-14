@@ -8,6 +8,5 @@ mkDerivation {
   libraryToolDepends = [ hpack ];
   executableHaskellDepends = [ base ];
   prePatch = "hpack";
-  homepage = "https://github.com/githubuser/fizzbuzz#readme";
   license = stdenv.lib.licenses.bsd3;
 }
