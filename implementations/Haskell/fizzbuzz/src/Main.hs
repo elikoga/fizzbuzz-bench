@@ -1,9 +1,15 @@
-module Lib
-  ( fizzbuzz,
-  )
-where
+module Main where
 
 import Data.Word
+import System.Environment
+
+main :: IO ()
+main = do
+  args <- getArgs
+  let limit = case args of
+        [] -> Nothing
+        x : _ -> return (read x)
+  putStr $ fizzbuzz limit
 
 fizzbuzz :: Maybe Word64 -> String
 fizzbuzz limit =
